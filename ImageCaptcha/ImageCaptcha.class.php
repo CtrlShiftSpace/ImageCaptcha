@@ -22,9 +22,9 @@
         //判斷驗證的字串是否符合
         /**
          * @author luke
-         * @param  String $systemCheckWord 正確驗證碼
-         * @param  String $checkWord       輸入內容
-         * @return bool                  TRUE|FALSE
+         * @param  [String] $systemCheckWord 正確驗證碼
+         * @param  [String] $checkWord       輸入內容
+         * @return [bool]                  TRUE|FALSE
          */
         public function getCheckWordResult($systemCheckWord, $checkWord)
         {
@@ -45,6 +45,7 @@
         }
 
         /**
+         * 隨機產生驗證碼並返回
          * @author luke
          * @param  [int] $nums 文字數量
          * @return [String]      返回驗證碼,為英數字組合
@@ -59,6 +60,16 @@
             return $code;
         }
 
+        /**
+         * [createImgByCode description]
+         * 將驗證碼轉換成圖片
+         * @author luke
+         * @param  [String] $code  驗證碼字串
+         * @param  [int] $nums  文字數量
+         * @param  [int] $width [圖形寬度]
+         * @param  [int] $high  [圖形高度]
+         * @return [void]
+         */
         public function createImgByCode($code,$nums,$width,$high) {
 
             //建立圖示，設置寬度及高度與顏色等等條件

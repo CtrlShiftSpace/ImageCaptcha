@@ -15,7 +15,7 @@
       $width 圖片寬
       $high 圖片高
     */
-    //產生驗證的文字
+    //設定驗證圖片的字數和寬高
     $imgCaptchaSetting = array(
                                 'nums' => 5,
                                 'width' => 120,

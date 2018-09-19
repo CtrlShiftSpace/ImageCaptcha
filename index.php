@@ -32,15 +32,16 @@
 ?>
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <title>php圖形驗證碼</title>
-   
+
     <script>
+        //利用JS重新讀取驗證碼
         function refresh_code(){ 
             document.getElementById("imgcode").src="ImageCaptcha/captcha.php"; 
         } 
     </script>
-
 
     <form name="form1" method="post" action="<?php $_SERVER['PHP_SELF']; ?>" >
         <p>請輸入下圖字樣：</p><p><img id="imgcode" src="ImageCaptcha/captcha.php" onclick="refresh_code()" /><br />
